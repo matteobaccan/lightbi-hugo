@@ -24,7 +24,7 @@
 
   <div class="row">
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-      <hr />
+      <hr>
     </div>
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
         {{ if .Params.tags }}
@@ -82,7 +82,7 @@
           {{ if .PrevInSection }}
           <li class="list-group-item b-0">
 
-            <a type="button" class="btn btn-dark" role="button" href="{{ .PrevInSection.Permalink }}"
+            <a class="btn btn-dark" role="button" href="{{ .PrevInSection.Permalink }}"
               data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr;
               {{ i18n "previousPost" }}</a>
           </li>
@@ -91,7 +91,7 @@
 
           {{ if .NextInSection }}
           <li class="list-group-item ms-auto b-0">
-            <a type="button" class="btn btn-dark" role="button" href="{{ .NextInSection.Permalink }}"
+            <a class="btn btn-dark" role="button" href="{{ .NextInSection.Permalink }}"
               data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">{{ i18n "nextPost" }}
               &rarr;</a>
           </li>
@@ -110,7 +110,7 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 mt-3">
           <h3>Read more</h3>
-          <hr />
+          <hr>
         </div>
 
         {{ if .Site.Params.showRelatedPosts }}
